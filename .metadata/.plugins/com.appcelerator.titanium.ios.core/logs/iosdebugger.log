@@ -1,0 +1,33 @@
+Logger started at: Tuesday, December 2, 2014 2:12:37 PM MST
+Component: com.appcelerator.titanium.ios.core
+Version: 1.0.0.1411756658
+[12:37.61] Sent: >21*1417554757059*version<
+[12:37.62] Recv: >1417554757059*2*3.4.1<
+[12:37.66] Sent: >20*1417554757060*update<
+[12:37.67] Recv: >1417554757060*3.4.1<
+[12:37.67] Sent: >45*1417554757061*option*stepFiltersEnabled*false<
+[12:37.68] Recv: >1417554757061<
+[12:37.68] Sent: >36*1417554757062*option*monitorXHR*true<
+[12:37.69] Recv: >1417554757062<
+[12:37.69] Sent: >45*1417554757063*option*suspendOnFirstLine*false<
+[12:37.69] Recv: >1417554757063<
+[12:37.70] Sent: >46*1417554757064*option*suspendOnExceptions*false<
+[12:37.70] Recv: >1417554757064<
+[12:37.70] Sent: >41*1417554757065*option*suspendOnErrors*true<
+[12:37.71] Recv: >1417554757065<
+[12:37.71] Sent: >43*1417554757066*option*suspendOnKeywords*true<
+[12:37.71] Recv: >1417554757066<
+[12:37.71] Sent: >45*1417554757067*option*bypassConstructors*false<
+[12:37.72] Recv: >1417554757067<
+[12:37.72] Sent: >45*1417554757068*option*stepFiltersEnabled*false<
+[12:37.72] Recv: >1417554757068<
+[12:37.72] Sent: >30*1417554757069*detailFormatters<
+[12:37.73] Recv: >1417554757069<
+[12:37.73] Sent: >20*1417554757070*enable<
+[12:37.73] Recv: >1417554757070<
+[12:37.76] Recv: >threads*created*0*kroll$1<
+[12:37.81] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/7A19F21A-D6FD-4FFD-97CE-F5CFF678E584/data/Containers/Bundle/Application/92B10E36-B955-4656-A518-D2D7C165B28B/Ogunjobi_Brandee_Project1.app/app.js, Resource: app_js<
+[12:37.99] Recv: >log*out*[ERROR] Error loading path: file:///Users/ketaloginc/Library/Developer/CoreSimulator/Devices/7A19F21A-D6FD-4FFD-97CE-F5CFF678E584/data/Containers/Bundle/Application/92B10E36-B955-4656-A518-D2D7C165B28B/Ogunjobi_Brandee_Project1.app/app.js, Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0x7b77be40 {NSFilePath=/Users/ketaloginc/Library/Developer/CoreSimulator/Devices/7A19F21A-D6FD-4FFD-97CE-F5CFF678E584/data/Containers/Bundle/Application/92B10E36-B955-4656-A518-D2D7C165B28B/Ogunjobi_Brandee_Project1.app/app.js, NSUnderlyingError=0x7b77c810 "The operation couldn’t be completed. No such file or directory"}<
+[12:37.100] Recv: >log*out*[ERROR] Script Error Could not find the file app.js<
+[12:37.100] Recv: >log*out*[DEBUG] Application booted in 129.471958 ms<
+----------End of file----------

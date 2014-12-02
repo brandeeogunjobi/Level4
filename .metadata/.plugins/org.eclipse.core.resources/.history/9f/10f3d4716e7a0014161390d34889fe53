@@ -1,0 +1,13 @@
+
+var marketing = ('Audience Engagement', 'Web Analytics','Real Time Reporting', 'Web Design', "Mobile Apps");
+
+
+var marketingLabel = Ti.UI.createLabel({
+	text: marketing[0],
+	backgroundColor: '#fff',
+	left: 20,
+	right: 20,
+	top: 20,
+	borderRadius: 5
+});
+

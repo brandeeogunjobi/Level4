@@ -1,6 +1,9 @@
 //Set Background Color
 Ti.UI.setBackgroundColor('#999');
 
+var marketing = ['Audience Engagement', 'Web Analytics','Real Time Reporting', 'Web Design', "Mobile Apps"];
+
+
 var window1 = Ti.UI.createWindow ({
 	backgroundColor: "#fff",
 	backgroundImage:"vector-grey-abstract-background-for-design.png",
@@ -14,7 +17,7 @@ var myFirstView = Ti.UI.createView({
 	top: 120,
 	left: 20,
 	right: 20,
-	borderRadius: 5	
+	borderRadius: 5
 });
 
 var myText = Ti.UI.createLabel({
@@ -54,23 +57,35 @@ var buttonView2 = Ti.UI.createLabel({
 
 var buttonText2 = Ti.UI.createLabel({
 	color: '#fff',
-	font: {fontSize: 16, fontFamily: 'Arial'},
+	font: {fontSize: 14, fontFamily: 'Arial'},
 	textAlign: "center",
 	text: 'Next'
 	
 });
 
+var marketingItems = function(){
+	myFirstView.hide();
+	myFirstView = null;
+	myText = null;
+	
+var marketingLabel = Ti.UI.createLabel({
+	text: marketing[0],
+	backgroundColor: '#fff',
+	left: 20,
+	right: 20,
+	top: 20,
+	borderRadius: 5
+});
+
+
+window1.add(marketingLabel);
+
+};
+
+buttonView.addEventListener("click", marketingItems);
+
 window1.add(myFirstView, buttonView, buttonView2);
 myFirstView.add(myText);
 buttonView.add(buttonText);
 buttonView2.add(buttonText2);
-window1.open();
-
-
-	
-
-
-
-
-
-
+window1.open(); 

@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/ketaloginc/Desktop/visualframeworks1/Ogunjobi_Brandee_Project1/build/iphone/Classes/AFOpenFlow/AFUIImageReflection.m \
-  /Users/ketaloginc/Desktop/visualframeworks1/Ogunjobi_Brandee_Project1/build/iphone/Classes/AFOpenFlow/AFUIImageReflection.h
+  /Users/ketaloginc/Desktop/vf1412/Ogunjobi_Brandee_Project1/build/iphone/Classes/AFOpenFlow/AFUIImageReflection.m \
+  /Users/ketaloginc/Desktop/vf1412/Ogunjobi_Brandee_Project1/build/iphone/Classes/AFOpenFlow/AFUIImageReflection.h
