@@ -1,0 +1,1 @@
+/Users/ketaloginc/Desktop/visualframeworks1/Ogunjobi_Brandee_Project1/Resources/marketingItems.js
