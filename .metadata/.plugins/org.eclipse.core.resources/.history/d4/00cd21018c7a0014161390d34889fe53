@@ -1,0 +1,79 @@
+//Set Background Color
+Ti.UI.setBackgroundColor('#999');
+
+var marketingItems = ['Audience Engagement','Web Analytics','Real Time Reporting', 
+					'Web Design',
+					 "Mobile Apps"];
+
+
+
+var window1 = Ti.UI.createWindow ({
+	backgroundColor: "#fff",
+	backgroundImage:"vector-grey-abstract-background-for-design.png",
+	backgroundRepeat: true,
+	title: "Ketalog Inc."
+});
+
+var myFirstView = Ti.UI.createView({
+	backgroundColor: "#333",
+	height: 150,
+	top: 120,
+	left: 20,
+	right: 20,
+	borderRadius: 5
+});
+
+var myText = Ti.UI.createLabel({
+	text: "Hello World",
+	color: "#fff",
+	font: {fontSize: 24, fontFamily: "Helvetica", fontWeight: "bold", fontStyle: "italic"},
+	textAlign: 'center',
+	top: 60,
+	left: 70
+});
+
+var buttonNext = Ti.UI.createLabel({
+	backgroundColor: '#8E2899',
+	top: 80,
+	left: 20,
+	right: 20,
+	borderRadius: 5,
+	height: 50
+});
+
+var nextLabel = Ti.UI.createLabel({
+	color: '#fff',
+	font: {fontSize: 16, fontFamily: 'Arial'},
+	textAlign: "center",
+	text: 'Next'
+	
+});
+
+var buttonPrevious = Ti.UI.createLabel({
+	backgroundColor: '#8E2899',
+	top: myFirstView.top + myFirstView.height + 150,
+	left: 20,
+	right: 20,
+	borderRadius: 5,
+	height: 50
+});
+
+var previousLabel = Ti.UI.createLabel({
+	color: '#fff',
+	font: {fontSize: 16, fontFamily: 'Arial'},
+	textAlign: "center",
+	text: 'Previous'
+	
+});
+
+
+
+buttonNext.addEventListener("click", marketingItems);
+buttonPrevious.addEventListener("click", marketingItems);
+
+
+window1.add(buttonNext, buttonPrevious);
+myFirstView.add(myText);
+buttonNext.add(nextLabel);
+buttonPrevious.add(previousLabel);
+window1.open(); 

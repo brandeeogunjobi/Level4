@@ -224,3 +224,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/ketalogi
 
 !ENTRY com.appcelerator.titanium.android.core 4 0 2014-12-02 14:33:14.921
 !MESSAGE There are no Android devices connected
+
+!ENTRY com.appcelerator.titanium.android.core 4 0 2014-12-02 17:46:42.254
+!MESSAGE There are no Android devices connected

@@ -1,0 +1,76 @@
+//Set Background Color
+Ti.UI.setBackgroundColor('#999');
+
+var marketing = ["Audience Engagement","Web Analytics","Real Time Reporting", "Web Design","Mobile Apps"];
+
+
+var window1 = Ti.UI.createWindow ({
+	backgroundColor: "#fff",
+	backgroundImage:"vector-grey-abstract-background-for-design.png",
+	backgroundRepeat: true,
+	title: "Ketalog Inc."
+});
+
+
+var buttonView = Ti.UI.createLabel({
+	backgroundColor: '#8E2899',
+	top: 180,
+	left: 20,
+	right: 20,
+	borderRadius: 5,
+	height: 50
+});
+
+var buttonText = Ti.UI.createLabel({
+	color: '#fff',
+	font: {fontSize: 16, fontFamily: 'Arial'},
+	textAlign: "center",
+	text: 'Next'
+	
+});
+
+var buttonView2 = Ti.UI.createLabel({
+	backgroundColor: '#8E2899',
+	top: buttonView.top + buttonView.height + 150,
+	left: 20,
+	right: 20,
+	borderRadius: 5,
+	height: 50
+});
+
+var buttonText2 = Ti.UI.createLabel({
+	color: '#fff',
+	font: {fontSize: 16, fontFamily: 'Arial'},
+	textAlign: "center",
+	text: 'Previous'
+	
+});
+
+
+	
+for (i=5, j=marketing.length; i<j; i++)	{
+var marketingLabel = Ti.UI.createLabel({
+	text: marketing[i],
+	backgroundColor: '#fff',
+	left: 20,
+	right: 20,
+	height: 35,
+	top: 50,
+	borderRadius: 5
+	
+});
+
+
+window1.add(marketingLabel);
+topValue = marketingLabel.top + marketing.height + 10;
+}
+
+
+
+
+buttonView.addEventListener("click", marketingItems);
+
+window1.add(buttonView, buttonView2);
+buttonView.add(buttonText);
+buttonView2.add(buttonText2);
+window1.open(); 

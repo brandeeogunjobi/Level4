@@ -1,0 +1,21 @@
+
+/*var marketingItems = ["1. Web Analytics", "2. Real Time Reporting", "3. Audience Engagement", "4. Web Design", "5. Mobile Apps"];
+
+var displayItems = marketingItems.length;
+var i = -1;
+
+var buttonNext = function(){
+	if(items === length -1){
+		i = -1;
+}; i++; myText.text = marketingItems[i];
+
+};
+
+var buttonPrevious = function(){
+	if(items === length -1){
+		i = -1;
+}; i++; myText.text = marketingItems[i];
+
+};
+*/
+
