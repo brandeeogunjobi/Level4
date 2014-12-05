@@ -28,7 +28,7 @@ var border = Ti.UI.createView({
 });
 
 var mainLabel = Ti.UI.createLabel({
-	text: "Online Advertising Terms",
+	text: "Online Adverising Terms",
 	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold" },
 	top: 30,
 	width: '100%',
@@ -41,7 +41,7 @@ var adTerms = Ti.UI.createTableView({
 
 if(Ti.Platform.name === "iPhone OS"){
 	advertisement.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
-};
+}
 
 var adSection = Ti.UI.createTableViewSection({
 	headerTitle: "What should go here",

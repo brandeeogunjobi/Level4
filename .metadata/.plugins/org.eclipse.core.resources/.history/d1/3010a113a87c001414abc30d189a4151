@@ -28,7 +28,7 @@ var border = Ti.UI.createView({
 });
 
 var mainLabel = Ti.UI.createLabel({
-	text: "Online Advertising Terms",
+	text: "Online Adverising Terms",
 	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold" },
 	top: 30,
 	width: '100%',
@@ -41,7 +41,7 @@ var adTerms = Ti.UI.createTableView({
 
 if(Ti.Platform.name === "iPhone OS"){
 	advertisement.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
-};
+}
 
 var adSection = Ti.UI.createTableViewSection({
 	headerTitle: "What should go here",
@@ -72,7 +72,7 @@ var getDetail = function(){
 	});
 
 	detailTitleView.add(detailMainLabel);
-	detailWindow.add(detailTitleView, detailBorder);
+	detailWindow.add(detailTitleView,detailBorder);
 	
 	detailWindow.open();
 	
@@ -85,7 +85,7 @@ var getDetail = function(){
 if(Ti.Platform.name === "iPhone OS"){
 	theRow.hasChild = false;
 	theRow.hasDetail = true;
-};
+}
 
 adSection.add(theRow);
 theRow.addEventListener("click", getDetail);
@@ -98,4 +98,7 @@ advertisement.setData(adSections);
 titleView.add(mainLabel);
 win1.add(titleView,border,advertisement);
 win1.open();
+
+
+
 
