@@ -55,13 +55,13 @@ var getDetail = function(){
 	var detailTitleView = Ti.UI.createView({
 		height: 65,
 		backgroundColor: "#BFBFBF"
-});
+	});
 	
 	var detailBorder = Ti.UI.createView({
 		height: 1,
 		backgroundColor: "#FFFFFF",
 		top: detailTitleView.height + detailTitleView.top
-});
+	});
 	
 	var detailMainLabel = Ti.UI.createLabel({
 		text: this.title,
@@ -69,30 +69,29 @@ var getDetail = function(){
 		top: 30,
 		width: '100%',
 		textAlign: "center"
-});
+	});
 
 	detailTitleView.add(detailMainLabel);
 	detailWindow.add(detailTitleView, detailBorder);
 	
 	detailWindow.open();
 	
-for(var i=0, j=advertisement.length; i<j; i++){
-	var theRow = Ti.UI.createTableViewRow({
-		title: advertisement[i].title,
-		hasChild: true
+	for(var i=0, j=advertisement.length; i<j; i++){
+		var theRow = Ti.UI.createTableViewRow({
+			title: advertisement[i].title,
+			hasChild: true
 });
 
 
 if(Ti.Platform.name === "iPhone OS"){
 	theRow.hasChild = false;
 	theRow.hasDetail = true;
-}
+};
 
 adSection.add(theRow);
-theRow.addEventListener("click", getDetail);  
-}
+theRow.addEventListener("click", getDetail);
 
-	var adSections = [adSection];
+var adSections = [adSection];
 
 advertisement.setData(adSections);
 

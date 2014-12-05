@@ -76,23 +76,22 @@ var getDetail = function(){
 	
 	detailWindow.open();
 	
-for(var i=0, j=advertisement.length; i<j; i++){
-	var theRow = Ti.UI.createTableViewRow({
-		title: advertisement[i].title,
-		hasChild: true
-});
+	/*for(var i=0, j=advertisement.length; i<j; i++){
+		var theRow = Ti.UI.createTableViewRow({
+			title: advertisement[i].title,
+			hasChild: true
+});*/
 
 
 if(Ti.Platform.name === "iPhone OS"){
 	theRow.hasChild = false;
 	theRow.hasDetail = true;
-}
+};
 
 adSection.add(theRow);
-theRow.addEventListener("click", getDetail);  
-}
+theRow.addEventListener("click", getDetail);
 
-	var adSections = [adSection];
+var adSections = [adSection];
 
 advertisement.setData(adSections);
 
