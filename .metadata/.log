@@ -331,3 +331,9 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/ketalogi
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
 !SUBENTRY 1 org.eclipse.ui 2 0 2014-12-05 11:06:58.991
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.aptana.js.debug.core 1 0 2014-12-05 14:39:15.998
+!MESSAGE Extension version: 3.4.1; protocol v2
+
+!ENTRY com.aptana.js.debug.core 1 0 2014-12-05 14:39:16.006
+!MESSAGE Extension update available: 3.4.1
