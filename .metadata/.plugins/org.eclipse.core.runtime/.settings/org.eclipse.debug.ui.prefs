@@ -5,4 +5,6 @@ org.eclipse.debug.ui.consoleBackground=255,255,255
 org.eclipse.debug.ui.errorColor=255,0,0
 org.eclipse.debug.ui.inColor=63,127,95
 org.eclipse.debug.ui.outColor=0,0,0
+org.eclipse.debug.ui.skip_breakpoints_during_run_to_line=true
+pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
 preferredTargets=default\:default|default,org.chromium.debug.ui.toggleTargetId\:default|
