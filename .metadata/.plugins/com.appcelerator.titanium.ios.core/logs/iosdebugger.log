@@ -1,40 +1,40 @@
-Logger started at: Friday, December 5, 2014 2:39:15 PM MST
+Logger started at: Friday, December 5, 2014 11:26:23 PM MST
 Component: com.appcelerator.titanium.ios.core
 Version: 1.0.0.1411756658
-[39:15.995] Sent: >21*1417815555991*version<
-[39:15.997] Recv: >1417815555991*2*3.4.1<
-[39:16.5] Sent: >20*1417815555992*update<
-[39:16.6] Recv: >1417815555992*3.4.1<
-[39:16.6] Sent: >45*1417815555993*option*stepFiltersEnabled*false<
-[39:16.7] Recv: >1417815555993<
-[39:16.7] Sent: >36*1417815555994*option*monitorXHR*true<
-[39:16.7] Recv: >1417815555994<
-[39:16.8] Sent: >45*1417815555995*option*suspendOnFirstLine*false<
-[39:16.8] Recv: >1417815555995<
-[39:16.8] Sent: >46*1417815555996*option*suspendOnExceptions*false<
-[39:16.8] Recv: >1417815555996<
-[39:16.8] Sent: >41*1417815555997*option*suspendOnErrors*true<
-[39:16.9] Recv: >1417815555997<
-[39:16.9] Sent: >43*1417815555998*option*suspendOnKeywords*true<
-[39:16.9] Recv: >1417815555998<
-[39:16.9] Sent: >45*1417815555999*option*bypassConstructors*false<
-[39:16.10] Recv: >1417815555999<
-[39:16.10] Sent: >45*1417815556000*option*stepFiltersEnabled*false<
-[39:16.10] Recv: >1417815556000<
-[39:16.10] Sent: >30*1417815556001*detailFormatters<
-[39:16.10] Recv: >1417815556001<
-[39:16.11] Sent: >20*1417815556002*enable<
-[39:16.11] Recv: >1417815556002<
-[39:16.13] Recv: >threads*created*0*kroll$1<
-[39:16.18] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/B11049BC-123F-4820-97BB-E79D35DF3151/data/Containers/Bundle/Application/094907A4-BBDB-4854-845C-60D143C2F018/Ogunjobi_Brandee_Project2.app/app.js, Resource: app_js<
-[39:16.19] Recv: >scripts*created*299088448|app:/app.js||1|103<
-[39:16.19] Recv: >resumed*0*started<
-[39:16.21] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/B11049BC-123F-4820-97BB-E79D35DF3151/data/Containers/Bundle/Application/094907A4-BBDB-4854-845C-60D143C2F018/Ogunjobi_Brandee_Project2.app/_app_props_.json, Resource: _app_props__json<
-[39:16.22] Recv: >log*out*[WARN] Invalid dimension value (nan) requested. Making the dimension undefined instead.<
-[39:16.23] Recv: >log*out*[WARN] Invalid dimension value (nan) requested. Making the dimension undefined instead.<
-[39:16.24] Recv: >suspended*0*exception*app:/app.js*42<
-[39:16.25] Sent: >22*1417815556003*frames*0<
-[39:16.26] Recv: >1417815556003*0|||app:/app.js|42|false|0|0<
-[39:30.793] Sent: >34*1417815556004*variables*0*frame[0]<
-[39:30.794] Recv: >1417815556004*advertisement|object|wnov|[object Array]*mainLabel|object|nov|[object TiUILabel]*adTerms|object|nov|[object TiUITableView]*window1|object|nov|[object TiUIWindow]*adSection|undefined|wv|undefined*titleView|object|nov|[object TiUIView]*getDetail|undefined|wv|undefined*adSections|undefined|wv|undefined*border|object|nov|[object TiUIView]*console|object|nov|[object TiConsole]<
+[26:23.779] Sent: >21*1417847183777*version<
+[26:23.780] Recv: >1417847183777*2*3.4.1<
+[26:23.784] Sent: >20*1417847183778*update<
+[26:23.785] Recv: >1417847183778*3.4.1<
+[26:23.785] Sent: >45*1417847183779*option*stepFiltersEnabled*false<
+[26:23.785] Recv: >1417847183779<
+[26:23.786] Sent: >36*1417847183780*option*monitorXHR*true<
+[26:23.786] Recv: >1417847183780<
+[26:23.786] Sent: >45*1417847183781*option*suspendOnFirstLine*false<
+[26:23.787] Recv: >1417847183781<
+[26:23.788] Sent: >46*1417847183782*option*suspendOnExceptions*false<
+[26:23.788] Recv: >1417847183782<
+[26:23.788] Sent: >41*1417847183783*option*suspendOnErrors*true<
+[26:23.788] Recv: >1417847183783<
+[26:23.788] Sent: >43*1417847183784*option*suspendOnKeywords*true<
+[26:23.789] Recv: >1417847183784<
+[26:23.789] Sent: >45*1417847183785*option*bypassConstructors*false<
+[26:23.789] Recv: >1417847183785<
+[26:23.789] Sent: >45*1417847183786*option*stepFiltersEnabled*false<
+[26:23.790] Recv: >1417847183786<
+[26:23.790] Sent: >30*1417847183787*detailFormatters<
+[26:23.790] Recv: >1417847183787<
+[26:23.791] Sent: >20*1417847183788*enable<
+[26:23.792] Recv: >1417847183788<
+[26:23.794] Recv: >threads*created*0*kroll$1<
+[26:23.799] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/7A19F21A-D6FD-4FFD-97CE-F5CFF678E584/data/Containers/Bundle/Application/69629794-7DC2-412A-A8E3-B1E4D1653F58/Ogunjobi_Brandee_Project2.app/app.js, Resource: app_js<
+[26:23.800] Recv: >scripts*created*298662528|app:/app.js||1|151<
+[26:23.801] Recv: >resumed*0*started<
+[26:23.802] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/7A19F21A-D6FD-4FFD-97CE-F5CFF678E584/data/Containers/Bundle/Application/69629794-7DC2-412A-A8E3-B1E4D1653F58/Ogunjobi_Brandee_Project2.app/_app_props_.json, Resource: _app_props__json<
+[26:23.804] Recv: >suspended*0*exception*app:/app.js*112<
+[26:23.806] Sent: >22*1417847183789*frames*0<
+[26:23.807] Recv: >1417847183789*0|||app:/app.js|112|false|0|0<
+[27:30.126] Sent: >34*1417847183790*variables*0*frame[0]<
+[27:30.128] Recv: >1417847183790*i|undefined|wv|undefined*advertisement|object|wnov|[object Array]*mainLabel|object|nov|[object TiUILabel]*closeButton|object|nov|[object TiUILabel]*detailBorder|object|nov|[object TiUIView]*adSections|undefined|wv|undefined*detailText|object|nov|[object TiUILabel]*window1|object|nov|[object TiUIWindow]*brandSection|object|nov|[object TiUITableViewSection]*brand|object|wnov|[object Array]*titleView|object|nov|[object TiUIView]*getDetail|object|v|[object Function]*closeWindow|object|v|[object Function]*detailTitleView|object|nov|[object TiUIView]*advertismentSection|object|nov|[object TiUITableViewSection]*terms|object|nov|[object TiUITableView]*border|object|nov|[object TiUIView]*theRow|undefined|wv|undefined*console|object|nov|[object TiConsole]*detailTitleLabel|object|nov|[object TiUILabel]<
+[27:39.843] Sent: >35*1417847183791*eval*0*frame[0]*title<
+[27:39.844] Recv: >1417847183791*exception*Can't find variable: title<
 ----------End of file----------

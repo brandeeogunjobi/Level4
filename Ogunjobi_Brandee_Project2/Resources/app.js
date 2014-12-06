@@ -2,7 +2,7 @@
 Ti.UI.setBackgroundColor('#DEF5FF');
 
 var advertisement = [
-	{title: "Ad Campaign", "description" : "Ad Campaigns vary throughout the online market. The Ad can be a specific size banner on display networks across the web. The can be a specific font style to attract audiences. They can also be in the forms of Blogs, Press Release, Video, Event Listing, plus much more. Choosing the right ad campaign might mean you have to choose mutliple platforms depending on your brand and goals."},
+	{title: "Ad Campaign", description: "Ad Campaigns vary throughout the online market. The Ad can be a specific size banner on display networks across the web. The can be a specific font style to attract audiences. They can also be in the forms of Blogs, Press Release, Video, Event Listing, plus much more. Choosing the right ad campaign might mean you have to choose mutliple platforms depending on your brand and goals."},
 	{title: "Certified Partners", description: 'Working on your marketing can be overwhelming. If you choose to outsource this part of your business you might want to consider certified partners. A certifie partner will mean you are working with an organization that has met all criteria bestowed upon them by an entity i.e., Google requires several crtierias that must be met each month to be elgible for certification.'},
 	{title: "Manual vs Automated", description: 'We live in automated world, but your campaigns still need a human touch. When companies use solely automation this can limit your target to a selection based on mass data and not specific to your brand goals. Having both automated and manual interest in the campaign will gain maximum results.'},
 	{title: "Data Mining", description: 'Once you have started advertising on line you need to learn about your audience. Looking at the data over a period of time can help you evaluate your client base. It can help advertisers determine where to make intelligent and strategic moves. Your audience includes not only Demographics, Ages, Genres and so on it also includes places you don\'t wamt tp show up. i.e., you sell flowers in Phoenix, you don\'t want to show up for flower seeds in New Jersey.'},
@@ -53,66 +53,90 @@ if(Ti.Platform.name === "iPhone OS"){
 
 var advertismentSection = Ti.UI.createTableViewSection({
 	headerTitle: "Online Advertising Terms"
-	
 });
 
 var brandSection = Ti.UI.createTableViewSection({
 	headerTitle: "Online Branding Solutions"
-	
 });
-
-for(var i=0, j=advertisement.length; i<j; i++){
-	var theRow = Ti.UI.createTableViewRow({
-		title: advertisement[i].title,
-		hasChild: true
-	});
-	
-if(Ti.Platform.name === "iPhone OS"){
-	theRow.hasChild = false;
-	theRow.hasDetail = true;
-}
-	
-	advertismentSection.add(theRow);
-}
 
 var getDetail = function(){
 	var detailWindow = Ti.UI.createWindow({
-		backgroundColor: "#F4F7FF"
+		height: 65,
+		backgroundColor: "#fff",
+		top: 0
 	});
-
-var detailTitleView = Ti.UI.createView({
-	height: 65,
-	backgroundColor: "#BFBFBF",
-	top: 0
+};
+	var detailTitleView = Ti.UI.createView({
+		height: 65,
+		backgroundColor: "#fff",
+		top: 0
+});
+	var detailBorder = Ti.UI.createView({
+		backgroundColor: "#dbdbdb",
+		height: 1,
+		top: detailTitleView.height + detailTitleView.top
+});
+	
+	detailTitleLabel = Ti.UI.createLabel({
+		text: this.title,
+		backgroundColor: "#dbdbdb",
+		font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
+		top: 30,
+		width: "100%",
+		textAlign: "center"
 });
 
-var detailBorder = Ti.UI.createView({
-	height: 1,
-	backgroundColor: "#FFFFFF",
-	top: detailTitleView.height + detailTitleView.top 
-});
-
-var detailMainLabel = Ti.UI.createLabel({
-	text: this.title,
-	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
-	top: 30,
-	width: '100%',
-	textAlign: "center"
-});
-
-detailTitleView.add(detailMainLabel);
-detailWindow.add(detailTitleView, detailBorder);
-
-detailWindow.open();
-
-for(var i=0, j=brand.length; i<j; i++){
-	var theRow = Ti.UI.createTableViewRow({
-		title: brand[i].title
+	var detailText = Ti.UI.createLabel({
+		text: this.desc,
+		font: {fontSize: 14, fontFamily: "Arial"},
+		top: detailBorder.height + detailBorder.top + 40,
+		left: 10,
+		right: 10
 	});
 	
+	var closeButton = Ti.UI.createLabel({
+		backgroundColor: "#333",
+		color: "#fff",
+		height: 50,
+		font: {fontSize: 12, fontFamily: "Arial"},
+		width: "100%",
+		bottom: 0,
+		textAlign: "center"
+	});
+	
+	var closeWindow = function (){
+		detailWindow.close();
+	};
+	
+	detailTitleView.add(detailTitleLabel);
+	
+	
 
+for(var i = 0; i < advertisement.length; i++){
+	var theRow = Ti.UI.createTableViewRow({
+		title:advertisement[i].title,
+		desc: advertisement[i].description,
+		hasChild: true
+});
+	if(Ti.Platform.name === "iPhone OS"){
+		theRow.hasChild = false;
+		theRow.hasDetail = true;
+	};
+		advertismentSection.add(theRow);
+}
+
+for(var i = 0; i < brand.length; i++){
+	var theRow = Ti.UI.createTableViewRow({
+		title: brand[i].title,
+		hasChild: true
+	});
+	if(Ti.Platform.name === "iPhone OS"){
+		theRow.hasChild = false;
+		theRow.hasDetail = true;
+	};
+	
+	
 	brandSection.add(theRow);
-	theRow.addEventListener('click', getDetail);
 }
 
 var adSections = [advertismentSection, brandSection];
@@ -122,3 +146,14 @@ terms.setData(adSections);
 titleView.add(mainLabel);
 window1.add(titleView, border, terms);
 window1.open(); 
+
+
+
+
+	
+
+
+
+
+
+
