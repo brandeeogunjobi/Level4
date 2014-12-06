@@ -66,6 +66,7 @@ var detailTitleView = Ti.UI.createView({
 	backgroundColor: "#fff",
 	top: 0
 });
+
 var detailBorder = Ti.UI.createView({
 	backgroundColor: "#dbdbdb",
 	height: 1,
@@ -116,61 +117,58 @@ var titleView = Ti.UI.createView({
 	backgroundColor: "#BFBFBF",
 	top: 0
 });
-			var mainLabel = Ti.UI.createLabel({
-				text: this.title,
-				font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
-				top: 30,
-				width: '100%',
-				textAlign: "center"
-			});
-			titleView.add(mainLabel);
+
+var mainLabel = Ti.UI.createLabel({
+	text: this.title,
+	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
+	top: 30,
+	width: '100%',
+	textAlign: "center"
+});
+	titleView.add(mainLabel);
 			
-			var descView = Ti.UI.createView({
+var descView = Ti.UI.createView({
 				//backgroundColor: "#BFBFBF",
 				//top: 65
-			});
-			var descContent = Ti.UI.createLabel({
-				text: this.desc,
-				font: {fontSize: 14, fontFamily: "Arial"},
-				top: 80,
-				left: 10,
-				right: 10,
-				width: 'auto',
-				textAlign: "center"
-			});
-			descView.add(descContent);
+});
 
-			var closeButton = Ti.UI.createLabel({
-				text:'Close Page',
-				backgroundColor: "#333",
-				color: "#f00",
-				height: 50,
-				font: {fontSize: 14, fontFamily: "Arial"},
-				width: "100%",
-				bottom: 0,
-				textAlign: "center"
-			});
+var descContent = Ti.UI.createLabel({
+	text: this.desc,
+	font: {fontSize: 14, fontFamily: "Arial"},
+	top: 80,
+	left: 10,
+	right: 10,
+	width: 'auto',
+	textAlign: "center"
+});
+	descView.add(descContent);
+
+var closeButton = Ti.UI.createLabel({
+	text:'Close Page',
+	backgroundColor: "#333",
+	color: "#f00",
+	height: 50,
+	font: {fontSize: 14, fontFamily: "Arial"},
+	width: "100%",
+	bottom: 0,
+	textAlign: "center"
+});
+	descContent.add(closeButton);			
 			
-			var closeWindow = function (){
+//var closeWindow = function (){
+	//window2.close();
+//};
+
+//closeButton.addEventListener("click", closeWindow);		
+closeButton.addEventListener('click', function(){
 				window2.close();
-			};
-			
-			closeButton.addEventListener('click', function(){
-				//window2.close();
 			//})
+});
 			
-			//var advertismentSection = Ti.UI.createTableViewSection({
-				//headerTitle: "Online Advertising Terms"
-			});
-			
-			//terms.setData(adSections);
-			
-			
-			window2.add(titleView, descView, closeButton);
-			//window2.add(titleView, border, terms);
-			
-			window2.open();
-		});
+window2.add(titleView, descView, descContent, closeButton);
+window2.open();
+
+});
 }
 
 for(var i = 0; i < brand.length; i++){
