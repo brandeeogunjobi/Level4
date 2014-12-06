@@ -124,65 +124,15 @@ for(var i = 0; i < advertisement.length; i++){
 		advertismentSection.add(theRow);
 		theRow.addEventListener("click", function(){
 			//console.log('this clicked');
-			//console.log(this.title);
-			//console.log(this.desc)
+			console.log(this.title);
+			cosnole.log(this.desc)
 			var window2 = Ti.UI.createWindow({
 				backgroundColor: "#f00",
 			});
 			
-			var titleView = Ti.UI.createView({
-				height: 65,
-				backgroundColor: "#BFBFBF",
-				top: 0
-			});
-			var mainLabel = Ti.UI.createLabel({
-				text: this.title,
-				font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
-				top: 30,
-				width: '100%',
-				textAlign: "center"
-			});
-			titleView.add(mainLabel);
-			
-			var descView = Ti.UI.createView({
-				//backgroundColor: "#BFBFBF",
-				//top: 65
-			});
-			var descContent = Ti.UI.createLabel({
-				text: this.desc,
-				//font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
-				//top: 30,
-				//width: '100%',
-				//textAlign: "center"
-			});
-			descView.add(descContent);
-
-			var closeButton = Ti.UI.createLabel({
-				text:'close Page',
-				backgroundColor: "#333",
-				color: "#fff",
-				height: 50,
-				font: {fontSize: 12, fontFamily: "Arial"},
-				width: "100%",
-				bottom: 0,
-				textAlign: "center"
-			});
-			
-			//closeButton.addEventListener('click', function(){
-				//window2.close();
-			//})
-			
-			//var advertismentSection = Ti.UI.createTableViewSection({
-				//headerTitle: "Online Advertising Terms"
-			//});
-			
-			//terms.setData(adSections);
-			
-			
-			window2.add(titleView, descView);
 			//window2.add(titleView, border, terms);
 			
-			window2.open();
+			//window2.open();
 		});
 }
 

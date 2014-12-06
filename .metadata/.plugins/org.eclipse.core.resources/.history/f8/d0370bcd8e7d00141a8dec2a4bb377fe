@@ -145,8 +145,8 @@ for(var i = 0; i < advertisement.length; i++){
 			titleView.add(mainLabel);
 			
 			var descView = Ti.UI.createView({
-				//backgroundColor: "#BFBFBF",
-				//top: 65
+				backgroundColor: "#BFBFBF",
+				top: 65
 			});
 			var descContent = Ti.UI.createLabel({
 				text: this.desc,

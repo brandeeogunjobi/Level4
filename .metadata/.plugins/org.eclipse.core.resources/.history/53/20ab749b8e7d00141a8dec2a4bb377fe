@@ -143,19 +143,6 @@ for(var i = 0; i < advertisement.length; i++){
 				textAlign: "center"
 			});
 			titleView.add(mainLabel);
-			
-			var descView = Ti.UI.createView({
-				//backgroundColor: "#BFBFBF",
-				//top: 65
-			});
-			var descContent = Ti.UI.createLabel({
-				text: this.desc,
-				//font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
-				//top: 30,
-				//width: '100%',
-				//textAlign: "center"
-			});
-			descView.add(descContent);
 
 			var closeButton = Ti.UI.createLabel({
 				text:'close Page',
@@ -168,10 +155,6 @@ for(var i = 0; i < advertisement.length; i++){
 				textAlign: "center"
 			});
 			
-			//closeButton.addEventListener('click', function(){
-				//window2.close();
-			//})
-			
 			//var advertismentSection = Ti.UI.createTableViewSection({
 				//headerTitle: "Online Advertising Terms"
 			//});
@@ -179,7 +162,7 @@ for(var i = 0; i < advertisement.length; i++){
 			//terms.setData(adSections);
 			
 			
-			window2.add(titleView, descView);
+			window2.add(titleView);
 			//window2.add(titleView, border, terms);
 			
 			window2.open();
