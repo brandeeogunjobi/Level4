@@ -23,6 +23,10 @@ var window1 = Ti.UI.createWindow({
 	backgroundColor: "#F4F7FF"
 });
 
+/*var navWindow = Ti.UI.ios.createNavigationWindow({
+	window: window1
+});*/
+
 var titleView = Ti.UI.createView({
 	height: 65,
 	backgroundColor: "#BFBFBF",
@@ -59,13 +63,13 @@ var brandSection = Ti.UI.createTableViewSection({
 	headerTitle: "Online Branding Solutions"
 });
 
-var getDetail = function(){
-	var detailWindow = Ti.UI.createWindow({
-		height: 65,
-		backgroundColor: "#fff",
-		top: 0
+//(function(){ 
+	var win2 = Ti.UI.createWindow({
+		backgroundColor: "#f00",
 	});
-};
+	//win2.open();
+//}) ();
+
 	var detailTitleView = Ti.UI.createView({
 		height: 65,
 		backgroundColor: "#fff",
@@ -86,7 +90,10 @@ var getDetail = function(){
 		textAlign: "center"
 });
 
-	var detailText = Ti.UI.createLabel({
+	detailTitleView.add(detailTitleLabel);
+	/*win2.add(detailTitleView, detailBorder);*/
+		
+var detailText = Ti.UI.createLabel({
 		text: this.desc,
 		font: {fontSize: 14, fontFamily: "Arial"},
 		top: detailBorder.height + detailBorder.top + 40,
@@ -94,7 +101,7 @@ var getDetail = function(){
 		right: 10
 	});
 	
-	var closeButton = Ti.UI.createLabel({
+var closeButton = Ti.UI.createLabel({
 		backgroundColor: "#333",
 		color: "#fff",
 		height: 50,
@@ -105,13 +112,11 @@ var getDetail = function(){
 	});
 	
 	var closeWindow = function (){
-		detailWindow.close();
+		win2.close();
 	};
 	
 	detailTitleView.add(detailTitleLabel);
 	
-	
-
 for(var i = 0; i < advertisement.length; i++){
 	var theRow = Ti.UI.createTableViewRow({
 		title:advertisement[i].title,
@@ -123,6 +128,17 @@ for(var i = 0; i < advertisement.length; i++){
 		theRow.hasDetail = true;
 	};
 		advertismentSection.add(theRow);
+		theRow.addEventListener("click", function(){
+			//console.log('this clicked');
+			console.log(this);
+			var window2 = Ti.UI.createWindow({
+				backgroundColor: "#f00",
+			});
+			
+			window2.add(titleView, border, terms);
+			
+			window2.open();
+		});
 }
 
 for(var i = 0; i < brand.length; i++){
