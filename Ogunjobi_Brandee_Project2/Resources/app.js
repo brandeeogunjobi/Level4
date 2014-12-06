@@ -23,10 +23,6 @@ var window1 = Ti.UI.createWindow({
 	backgroundColor: "#F4F7FF"
 });
 
-/*var navWindow = Ti.UI.ios.createNavigationWindow({
-	window: window1
-});*/
-
 var titleView = Ti.UI.createView({
 	height: 65,
 	backgroundColor: "#BFBFBF",
@@ -40,7 +36,7 @@ var border = Ti.UI.createView({
 });
 
 var mainLabel = Ti.UI.createLabel({
-	text: "Online Advertising Terms & Services",
+	text: "Online Advertising Terms",
 	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
 	top: 30,
 	width: '100%',
@@ -56,13 +52,14 @@ if(Ti.Platform.name === "iPhone OS"){
 }
 
 var advertismentSection = Ti.UI.createTableViewSection({
-	headerTitle: "Online Advertising Terms"
+	headerTitle: "Online Advertising",
+	footerTitle: "Business Solutions"
 });
 
 var brandSection = Ti.UI.createTableViewSection({
-	headerTitle: "Online Branding Solutions"
+	headerTitle: "Company Branding",
+	footerTitle: "Marketing Services"
 });
-
 
 var detailTitleView = Ti.UI.createView({
 	height: 65,
@@ -75,66 +72,50 @@ var detailBorder = Ti.UI.createView({
 	top: detailTitleView.height + detailTitleView.top
 });
 	
-	detailTitleLabel = Ti.UI.createLabel({
-		text: this.title,
-		backgroundColor: "#dbdbdb",
-		font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
-		top: 30,
-		width: "100%",
-		textAlign: "center"
+var detailTitleLabel = Ti.UI.createLabel({
+	text: this.title,
+	backgroundColor: "#dbdbdb",
+	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
+	top: 30,
+	width: "100%",
+	textAlign: "center"
 });
 
 	detailTitleView.add(detailTitleLabel);
-	/*win2.add(detailTitleView, detailBorder);*/
-		
+	
 var detailText = Ti.UI.createLabel({
-		text: this.desc,
-		font: {fontSize: 14, fontFamily: "Arial"},
-		top: detailBorder.height + detailBorder.top + 40,
-		left: 10,
-		right: 10
-	});
-	
-var closeButton = Ti.UI.createLabel({
-		backgroundColor: "#333",
-		color: "#fff",
-		height: 50,
-		font: {fontSize: 12, fontFamily: "Arial"},
-		width: "100%",
-		bottom: 0,
-		textAlign: "center"
-	});
-	
-	var closeWindow = function (){
-		win2.close();
-	};
-	
-	detailTitleView.add(detailTitleLabel);
+	text: this.desc,
+	font: {fontSize: 14, fontFamily: "Arial"},
+	top: detailBorder.height + detailBorder.top + 40,
+	left: 10,
+	right: 10
+});
 	
 for(var i = 0; i < advertisement.length; i++){
 	var theRow = Ti.UI.createTableViewRow({
-		title:advertisement[i].title,
-		desc: advertisement[i].description,
-		hasChild: true
+	title:advertisement[i].title,
+	desc: advertisement[i].description,
+	hasChild: true
 });
-	if(Ti.Platform.name === "iPhone OS"){
-		theRow.hasChild = false;
-		theRow.hasDetail = true;
-	};
-		advertismentSection.add(theRow);
-		theRow.addEventListener("click", function(){
-			//console.log('this clicked');
-			//console.log(this.title);
-			//console.log(this.desc)
-			var window2 = Ti.UI.createWindow({
-				backgroundColor: "#f00",
-			});
+
+if(Ti.Platform.name === "iPhone OS"){
+	theRow.hasChild = false;
+	theRow.hasDetail = true;
+};
+	advertismentSection.add(theRow);
+	theRow.addEventListener("click", function(){
+	//console.log('this clicked');
+	//console.log(this.title);
+	//console.log(this.desc)
+var window2 = Ti.UI.createWindow({
+	backgroundColor: "#f00",
+});
 			
-			var titleView = Ti.UI.createView({
-				height: 65,
-				backgroundColor: "#BFBFBF",
-				top: 0
-			});
+var titleView = Ti.UI.createView({
+	height: 65,
+	backgroundColor: "#BFBFBF",
+	top: 0
+});
 			var mainLabel = Ti.UI.createLabel({
 				text: this.title,
 				font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
@@ -150,36 +131,42 @@ for(var i = 0; i < advertisement.length; i++){
 			});
 			var descContent = Ti.UI.createLabel({
 				text: this.desc,
-				//font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
-				//top: 30,
-				//width: '100%',
-				//textAlign: "center"
+				font: {fontSize: 14, fontFamily: "Arial"},
+				top: 80,
+				left: 10,
+				right: 10,
+				width: 'auto',
+				textAlign: "center"
 			});
 			descView.add(descContent);
 
 			var closeButton = Ti.UI.createLabel({
-				text:'close Page',
+				text:'Close Page',
 				backgroundColor: "#333",
-				color: "#fff",
+				color: "#f00",
 				height: 50,
-				font: {fontSize: 12, fontFamily: "Arial"},
+				font: {fontSize: 14, fontFamily: "Arial"},
 				width: "100%",
 				bottom: 0,
 				textAlign: "center"
 			});
 			
-			//closeButton.addEventListener('click', function(){
+			var closeWindow = function (){
+				window2.close();
+			};
+			
+			closeButton.addEventListener('click', function(){
 				//window2.close();
 			//})
 			
 			//var advertismentSection = Ti.UI.createTableViewSection({
 				//headerTitle: "Online Advertising Terms"
-			//});
+			});
 			
 			//terms.setData(adSections);
 			
 			
-			window2.add(titleView, descView);
+			window2.add(titleView, descView, closeButton);
 			//window2.add(titleView, border, terms);
 			
 			window2.open();
@@ -190,13 +177,11 @@ for(var i = 0; i < brand.length; i++){
 	var theRow = Ti.UI.createTableViewRow({
 		title: brand[i].title,
 		hasChild: true
-	});
-	if(Ti.Platform.name === "iPhone OS"){
+});
+if(Ti.Platform.name === "iPhone OS"){
 		theRow.hasChild = false;
 		theRow.hasDetail = true;
-	};
-	
-	
+};
 	brandSection.add(theRow);
 }
 
@@ -207,14 +192,3 @@ terms.setData(adSections);
 titleView.add(mainLabel);
 window1.add(titleView, border, terms);
 window1.open(); 
-
-
-
-
-	
-
-
-
-
-
-
