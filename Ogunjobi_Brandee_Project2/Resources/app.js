@@ -52,24 +52,16 @@ if(Ti.Platform.name === "iPhone OS"){
 }
 
 var advertismentSection = Ti.UI.createTableViewSection({
-	height: 165,
 	headerTitle: "Online Advertising",
 	footerTitle: "Business Solutions",
-	height: "auto",
-	//top:40,
-	bottom: 30,
-	width: "100%"
+
 
 });
 
 
 var brandSection = Ti.UI.createTableViewSection({
-	backgroundColor: "#f00",
 	headerTitle: "Company Branding",
 	footerTitle: "Marketing Services",
-	height: "auto",
-	top:30,
-	width: "100%"
 
 });
 
