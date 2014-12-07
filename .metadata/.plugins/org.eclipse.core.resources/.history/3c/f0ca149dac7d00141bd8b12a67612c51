@@ -1,0 +1,6 @@
+
+var titleView = Ti.UI.createView({
+	height: 65,
+	backgroundColor: "#BFBFBF",
+	top: 0
+});

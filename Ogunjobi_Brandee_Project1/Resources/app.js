@@ -77,8 +77,8 @@ var newbuttonNext = function(){
 };
 
 var newbuttonPrevious = function(){
-	if(i === length -1){
-		i = -1;
+	if(i === 0){
+		i = length;
 }; i--; myIntro.text = marketingItems[i];
 
 };

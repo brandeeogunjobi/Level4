@@ -1,0 +1,76 @@
+var window1 = Ti.UI.createWindow({
+	backgroundColor: "#F4F7FF"
+});
+
+var titleView = Ti.UI.createView({
+	height: 65,
+	backgroundColor: "#BFBFBF",
+	top: 0
+});
+
+var border = Ti.UI.createView({
+	height: 1,
+	backgroundColor: "#FFFFFF",
+	top: titleView.height + titleView.top 
+});
+
+var mainLabel = Ti.UI.createLabel({
+	text: "Online Advertising Terms",
+	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
+	top: 30,
+	width: '100%',
+	textAlign: "center"
+});
+
+var terms = Ti.UI.createTableView({
+	top: border.top + border.height 
+});
+
+if(Ti.Platform.name === "iPhone OS"){
+	terms.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
+}
+
+var advertismentSection = Ti.UI.createTableViewSection({
+	headerTitle: "Online Advertising",
+	footerTitle: "Business Solutions",
+
+
+});
+
+
+var brandSection = Ti.UI.createTableViewSection({
+	headerTitle: "Company Branding",
+	footerTitle: "Marketing Services",
+
+});
+
+var detailTitleView = Ti.UI.createView({
+	height: 65,
+	backgroundColor: "#fff",
+	top: 0
+});
+
+var detailBorder = Ti.UI.createView({
+	backgroundColor: "#dbdbdb",
+	height: 1,
+	top: detailTitleView.height + detailTitleView.top
+});
+	
+var detailTitleLabel = Ti.UI.createLabel({
+	text: this.title,
+	backgroundColor: "#dbdbdb",
+	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
+	top: 30,
+	width: "100%",
+	textAlign: "center"
+});
+
+	detailTitleView.add(detailTitleLabel);
+	
+var detailText = Ti.UI.createLabel({
+	text: this.desc,
+	font: {fontSize: 14, fontFamily: "Arial"},
+	top: detailBorder.height + detailBorder.top + 40,
+	left: 10,
+	right: 10
+});

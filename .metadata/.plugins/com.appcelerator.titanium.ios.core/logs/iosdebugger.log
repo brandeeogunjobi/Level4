@@ -1,40 +1,34 @@
-Logger started at: Friday, December 5, 2014 11:26:23 PM MST
+Logger started at: Saturday, December 6, 2014 6:23:04 PM MST
 Component: com.appcelerator.titanium.ios.core
 Version: 1.0.0.1411756658
-[26:23.779] Sent: >21*1417847183777*version<
-[26:23.780] Recv: >1417847183777*2*3.4.1<
-[26:23.784] Sent: >20*1417847183778*update<
-[26:23.785] Recv: >1417847183778*3.4.1<
-[26:23.785] Sent: >45*1417847183779*option*stepFiltersEnabled*false<
-[26:23.785] Recv: >1417847183779<
-[26:23.786] Sent: >36*1417847183780*option*monitorXHR*true<
-[26:23.786] Recv: >1417847183780<
-[26:23.786] Sent: >45*1417847183781*option*suspendOnFirstLine*false<
-[26:23.787] Recv: >1417847183781<
-[26:23.788] Sent: >46*1417847183782*option*suspendOnExceptions*false<
-[26:23.788] Recv: >1417847183782<
-[26:23.788] Sent: >41*1417847183783*option*suspendOnErrors*true<
-[26:23.788] Recv: >1417847183783<
-[26:23.788] Sent: >43*1417847183784*option*suspendOnKeywords*true<
-[26:23.789] Recv: >1417847183784<
-[26:23.789] Sent: >45*1417847183785*option*bypassConstructors*false<
-[26:23.789] Recv: >1417847183785<
-[26:23.789] Sent: >45*1417847183786*option*stepFiltersEnabled*false<
-[26:23.790] Recv: >1417847183786<
-[26:23.790] Sent: >30*1417847183787*detailFormatters<
-[26:23.790] Recv: >1417847183787<
-[26:23.791] Sent: >20*1417847183788*enable<
-[26:23.792] Recv: >1417847183788<
-[26:23.794] Recv: >threads*created*0*kroll$1<
-[26:23.799] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/7A19F21A-D6FD-4FFD-97CE-F5CFF678E584/data/Containers/Bundle/Application/69629794-7DC2-412A-A8E3-B1E4D1653F58/Ogunjobi_Brandee_Project2.app/app.js, Resource: app_js<
-[26:23.800] Recv: >scripts*created*298662528|app:/app.js||1|151<
-[26:23.801] Recv: >resumed*0*started<
-[26:23.802] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/7A19F21A-D6FD-4FFD-97CE-F5CFF678E584/data/Containers/Bundle/Application/69629794-7DC2-412A-A8E3-B1E4D1653F58/Ogunjobi_Brandee_Project2.app/_app_props_.json, Resource: _app_props__json<
-[26:23.804] Recv: >suspended*0*exception*app:/app.js*112<
-[26:23.806] Sent: >22*1417847183789*frames*0<
-[26:23.807] Recv: >1417847183789*0|||app:/app.js|112|false|0|0<
-[27:30.126] Sent: >34*1417847183790*variables*0*frame[0]<
-[27:30.128] Recv: >1417847183790*i|undefined|wv|undefined*advertisement|object|wnov|[object Array]*mainLabel|object|nov|[object TiUILabel]*closeButton|object|nov|[object TiUILabel]*detailBorder|object|nov|[object TiUIView]*adSections|undefined|wv|undefined*detailText|object|nov|[object TiUILabel]*window1|object|nov|[object TiUIWindow]*brandSection|object|nov|[object TiUITableViewSection]*brand|object|wnov|[object Array]*titleView|object|nov|[object TiUIView]*getDetail|object|v|[object Function]*closeWindow|object|v|[object Function]*detailTitleView|object|nov|[object TiUIView]*advertismentSection|object|nov|[object TiUITableViewSection]*terms|object|nov|[object TiUITableView]*border|object|nov|[object TiUIView]*theRow|undefined|wv|undefined*console|object|nov|[object TiConsole]*detailTitleLabel|object|nov|[object TiUILabel]<
-[27:39.843] Sent: >35*1417847183791*eval*0*frame[0]*title<
-[27:39.844] Recv: >1417847183791*exception*Can't find variable: title<
+[23:4.126] Sent: >21*1417915384125*version<
+[23:4.128] Recv: >1417915384125*2*3.4.1<
+[23:4.134] Sent: >20*1417915384126*update<
+[23:4.135] Recv: >1417915384126*3.4.1<
+[23:4.135] Sent: >45*1417915384127*option*stepFiltersEnabled*false<
+[23:4.136] Recv: >1417915384127<
+[23:4.136] Sent: >36*1417915384128*option*monitorXHR*true<
+[23:4.136] Recv: >1417915384128<
+[23:4.136] Sent: >45*1417915384129*option*suspendOnFirstLine*false<
+[23:4.137] Recv: >1417915384129<
+[23:4.137] Sent: >46*1417915384130*option*suspendOnExceptions*false<
+[23:4.137] Recv: >1417915384130<
+[23:4.137] Sent: >41*1417915384131*option*suspendOnErrors*true<
+[23:4.138] Recv: >1417915384131<
+[23:4.138] Sent: >43*1417915384132*option*suspendOnKeywords*true<
+[23:4.138] Recv: >1417915384132<
+[23:4.138] Sent: >45*1417915384133*option*bypassConstructors*false<
+[23:4.139] Recv: >1417915384133<
+[23:4.139] Sent: >45*1417915384134*option*stepFiltersEnabled*false<
+[23:4.139] Recv: >1417915384134<
+[23:4.140] Sent: >30*1417915384135*detailFormatters<
+[23:4.140] Recv: >1417915384135<
+[23:4.140] Sent: >20*1417915384136*enable<
+[23:4.141] Recv: >1417915384136<
+[23:4.144] Recv: >threads*created*0*kroll$1<
+[23:4.150] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/B11049BC-123F-4820-97BB-E79D35DF3151/data/Containers/Bundle/Application/D07BDC9D-BD2E-4CEC-8EF2-02CCF48B0EFA/Ogunjobi_Brandee_Project2.app/app.js, Resource: app_js<
+[23:4.151] Recv: >scripts*created*299244224|app:/app.js||1|288<
+[23:4.155] Recv: >resumed*0*started<
+[23:4.156] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/B11049BC-123F-4820-97BB-E79D35DF3151/data/Containers/Bundle/Application/D07BDC9D-BD2E-4CEC-8EF2-02CCF48B0EFA/Ogunjobi_Brandee_Project2.app/_app_props_.json, Resource: _app_props__json<
+[23:4.195] Recv: >log*out*[DEBUG] Application booted in 152.567983 ms<
 ----------End of file----------
