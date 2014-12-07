@@ -12,11 +12,11 @@ var advertisement = [
 ];
 	
 var brand = [
-	{title: "Web Development"},
-	{title: "Graphic Design"},
-	{title: "Social Media Design"},
-	{title: "Blog & PR"},
-	{title: "Brand Management"}
+	{title: "Web Development", description: "Hiring someone to envelop all of your business concepts online"},
+	{title: "Graphic Design", description: "Hiring someone to envelop all of your business concepts online"},
+	{title: "Social Media Design", description: "Hiring someone to envelop all of your business concepts online"},
+	{title: "Blog & PR", description: "Hiring someone to envelop all of your business concepts online"},
+	{title: "Brand Management", description: "Hiring someone to envelop all of your business concepts online"}
 ];
 
 var window1 = Ti.UI.createWindow({
@@ -52,13 +52,25 @@ if(Ti.Platform.name === "iPhone OS"){
 }
 
 var advertismentSection = Ti.UI.createTableViewSection({
+	height: 165,
 	headerTitle: "Online Advertising",
-	footerTitle: "Business Solutions"
+	footerTitle: "Business Solutions",
+	height: "auto",
+	//top:40,
+	bottom: 30,
+	width: "100%"
+
 });
 
+
 var brandSection = Ti.UI.createTableViewSection({
+	backgroundColor: "#f00",
 	headerTitle: "Company Branding",
-	footerTitle: "Marketing Services"
+	footerTitle: "Marketing Services",
+	height: "auto",
+	top:30,
+	width: "100%"
+
 });
 
 var detailTitleView = Ti.UI.createView({
@@ -128,8 +140,8 @@ var mainLabel = Ti.UI.createLabel({
 	titleView.add(mainLabel);
 			
 var descView = Ti.UI.createView({
-				//backgroundColor: "#BFBFBF",
-				//top: 65
+	backgroundColor: "#dbdbdb",
+	top: 65
 });
 
 var descContent = Ti.UI.createLabel({
@@ -155,14 +167,9 @@ var closeButton = Ti.UI.createLabel({
 });
 	descContent.add(closeButton);			
 			
-//var closeWindow = function (){
-	//window2.close();
-//};
-
-//closeButton.addEventListener("click", closeWindow);		
 closeButton.addEventListener('click', function(){
-				window2.close();
-			//})
+window2.close();
+			
 });
 			
 window2.add(titleView, descView, descContent, closeButton);
@@ -171,17 +178,113 @@ window2.open();
 });
 }
 
+var detailTitle3View = Ti.UI.createView({
+	height: 65,
+	backgroundColor: "#fff",
+	top: 0
+});
+
+var detail3Border = Ti.UI.createView({
+	backgroundColor: "#dbdbdb",
+	height: 1,
+	top: detailTitle3View.height + detailTitle3View.top
+});
+	
+var detailTitle3Label = Ti.UI.createLabel({
+	text: this.title,
+	backgroundColor: "#dbdbdb",
+	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
+	top: 30,
+	width: "100%",
+	textAlign: "center"
+});
+
+	detailTitle3View.add(detailTitle3Label);
+	
+var detail3Text = Ti.UI.createLabel({
+	text: this.desc,
+	font: {fontSize: 14, fontFamily: "Arial"},
+	top: detailBorder.height + detailBorder.top + 40,
+	left: 10,
+	right: 10
+});
+
 for(var i = 0; i < brand.length; i++){
 	var theRow = Ti.UI.createTableViewRow({
 		title: brand[i].title,
+		//title:advertisement[i].title,
+		desc: brand[i].description,
 		hasChild: true
 });
+
 if(Ti.Platform.name === "iPhone OS"){
 		theRow.hasChild = false;
 		theRow.hasDetail = true;
 };
 	brandSection.add(theRow);
+		theRow.addEventListener("click", function(){
+	//console.log('this clicked');
+	//console.log(this.title);
+	//console.log(this.desc)
+var window3 = Ti.UI.createWindow({
+	backgroundColor: "#f00",
+});
+			
+var title3View = Ti.UI.createView({
+	height: 65,
+	backgroundColor: "#BFBFBF",
+	top: 0
+});
+
+var main3Label = Ti.UI.createLabel({
+	text: this.title,
+	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
+	top: 30,
+	width: '100%',
+	textAlign: "center"
+});
+	title3View.add(main3Label);
+			
+var desc3View = Ti.UI.createView({
+	backgroundColor: "#dbdbdb",
+	top: 65
+});
+
+var desc3Content = Ti.UI.createLabel({
+	text: this.desc,
+	font: {fontSize: 14, fontFamily: "Arial"},
+	top: 80,
+	left: 10,
+	right: 10,
+	width: 'auto',
+	textAlign: "center"
+});
+	desc3View.add(desc3Content);
+
+var close3Button = Ti.UI.createLabel({
+	text:'Close Page',
+	backgroundColor: "#333",
+	color: "#f00",
+	height: 50,
+	font: {fontSize: 14, fontFamily: "Arial"},
+	width: "100%",
+	bottom: 0,
+	textAlign: "center"
+});
+	desc3Content.add(close3Button);			
+			
+close3Button.addEventListener('click', function(){
+window3.close();
+			
+});
+			
+window3.add(title3View, desc3View, desc3Content, close3Button);
+window3.open();
+
+});
 }
+	
+//}
 
 var adSections = [advertismentSection, brandSection];
 
