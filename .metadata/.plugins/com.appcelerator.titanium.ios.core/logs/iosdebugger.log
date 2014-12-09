@@ -1,34 +1,43 @@
-Logger started at: Saturday, December 6, 2014 6:23:04 PM MST
+Logger started at: Monday, December 8, 2014 9:53:45 PM MST
 Component: com.appcelerator.titanium.ios.core
 Version: 1.0.0.1411756658
-[23:4.126] Sent: >21*1417915384125*version<
-[23:4.128] Recv: >1417915384125*2*3.4.1<
-[23:4.134] Sent: >20*1417915384126*update<
-[23:4.135] Recv: >1417915384126*3.4.1<
-[23:4.135] Sent: >45*1417915384127*option*stepFiltersEnabled*false<
-[23:4.136] Recv: >1417915384127<
-[23:4.136] Sent: >36*1417915384128*option*monitorXHR*true<
-[23:4.136] Recv: >1417915384128<
-[23:4.136] Sent: >45*1417915384129*option*suspendOnFirstLine*false<
-[23:4.137] Recv: >1417915384129<
-[23:4.137] Sent: >46*1417915384130*option*suspendOnExceptions*false<
-[23:4.137] Recv: >1417915384130<
-[23:4.137] Sent: >41*1417915384131*option*suspendOnErrors*true<
-[23:4.138] Recv: >1417915384131<
-[23:4.138] Sent: >43*1417915384132*option*suspendOnKeywords*true<
-[23:4.138] Recv: >1417915384132<
-[23:4.138] Sent: >45*1417915384133*option*bypassConstructors*false<
-[23:4.139] Recv: >1417915384133<
-[23:4.139] Sent: >45*1417915384134*option*stepFiltersEnabled*false<
-[23:4.139] Recv: >1417915384134<
-[23:4.140] Sent: >30*1417915384135*detailFormatters<
-[23:4.140] Recv: >1417915384135<
-[23:4.140] Sent: >20*1417915384136*enable<
-[23:4.141] Recv: >1417915384136<
-[23:4.144] Recv: >threads*created*0*kroll$1<
-[23:4.150] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/B11049BC-123F-4820-97BB-E79D35DF3151/data/Containers/Bundle/Application/D07BDC9D-BD2E-4CEC-8EF2-02CCF48B0EFA/Ogunjobi_Brandee_Project2.app/app.js, Resource: app_js<
-[23:4.151] Recv: >scripts*created*299244224|app:/app.js||1|288<
-[23:4.155] Recv: >resumed*0*started<
-[23:4.156] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/B11049BC-123F-4820-97BB-E79D35DF3151/data/Containers/Bundle/Application/D07BDC9D-BD2E-4CEC-8EF2-02CCF48B0EFA/Ogunjobi_Brandee_Project2.app/_app_props_.json, Resource: _app_props__json<
-[23:4.195] Recv: >log*out*[DEBUG] Application booted in 152.567983 ms<
+[53:45.340] Sent: >21*1418100825337*version<
+[53:45.342] Recv: >1418100825337*2*3.4.1<
+[53:45.343] Sent: >20*1418100825338*update<
+[53:45.344] Recv: >1418100825338*3.4.1<
+[53:45.344] Sent: >45*1418100825339*option*stepFiltersEnabled*false<
+[53:45.345] Recv: >1418100825339<
+[53:45.345] Sent: >36*1418100825340*option*monitorXHR*true<
+[53:45.345] Recv: >1418100825340<
+[53:45.345] Sent: >45*1418100825341*option*suspendOnFirstLine*false<
+[53:45.346] Recv: >1418100825341<
+[53:45.346] Sent: >46*1418100825342*option*suspendOnExceptions*false<
+[53:45.346] Recv: >1418100825342<
+[53:45.346] Sent: >41*1418100825343*option*suspendOnErrors*true<
+[53:45.347] Recv: >1418100825343<
+[53:45.347] Sent: >43*1418100825344*option*suspendOnKeywords*true<
+[53:45.347] Recv: >1418100825344<
+[53:45.347] Sent: >45*1418100825345*option*bypassConstructors*false<
+[53:45.347] Recv: >1418100825345<
+[53:45.348] Sent: >45*1418100825346*option*stepFiltersEnabled*false<
+[53:45.348] Recv: >1418100825346<
+[53:45.348] Sent: >30*1418100825347*detailFormatters<
+[53:45.348] Recv: >1418100825347<
+[53:45.349] Sent: >20*1418100825348*enable<
+[53:45.349] Recv: >1418100825348<
+[53:45.361] Recv: >threads*created*0*kroll$1<
+[53:45.377] Recv: >log*out*[DEBUG] Loading: /Users/ketaloginc/Library/Developer/CoreSimulator/Devices/B11049BC-123F-4820-97BB-E79D35DF3151/data/Containers/Bundle/Application/3EA3EAF3-A5C2-4199-988C-C403F703375E/Ogunjobi_Brandee_Project3.app/app.js, Resource: app_js<
+[53:45.381] Recv: >scripts*created*301545792|app:/app.js||1|45<
+[53:45.382] Recv: >resumed*0*started<
+[53:45.384] Recv: >log*out*[INFO] 100 x 100: <
+[53:45.384] Recv: >log*out*[WARN] Attempted to load TiUIwindowProxy: Could not find class definition.<
+[53:45.386] Recv: >suspended*0*exception*app:/app.js*14<
+[53:45.387] Sent: >22*1418100825349*frames*0<
+[53:45.387] Recv: >1418100825349*0|||app:/app.js|14|false|0|0<
+[53:59.429] Sent: >34*1418100825350*variables*0*frame[0]<
+[53:59.431] Recv: >1418100825350*itemCount|number|wv|15*rowCount|number|wv|3*margin|number|wv|10*trueCanvasWidth|string|wv|"400 x 800: "*size|string|wv|"100 x 100: "*window1|undefined|wv|undefined*view|undefined|wv|undefined*pWeight|undefined|wv|undefined*pWidth|number|wv|320*viewContainer|undefined|wv|undefined*text|undefined|wv|undefined*i|undefined|wv|undefined*border|undefined|wv|undefined*console|object|nov|[object TiConsole]<
+[54:5.188] Sent: >38*1418100825351*eval*0*frame[0]*Titanium<
+[54:5.190] Recv: >1418100825351*result*0*object|pvl|[object Object]<
+[54:5.192] Sent: >38*1418100825352*eval*0*frame[0]*Titanium<
+[54:5.193] Recv: >1418100825352*result*1*object|pvl|[object Object]<
 ----------End of file----------
