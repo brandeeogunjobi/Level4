@@ -1,56 +1,61 @@
-Titanium.UI.setBackgroundColor('#F00');
+//Ti.UI.setBackgroundColor('#81B465');
 
-var pWidth =Ti.Platform.displayCaps.platformWidth;
-var pWeight = Ti.Platform.displayCaps.platformWeight;
-var itemCount = 1;
-var rowCount = 3;
-var margin = 20;
-//var trueCanvasWidth = 320;
-//var trueCanvasWidth = 'Width x Height: 480 x 320 ';
-var size = '10 x 10: ';
- //console.log(size);
-
-function logDisplayCaps(){
-  Ti.API.info('Width x Height: ' + Ti.Platform.displayCaps.platformWidth + ' x ' + Ti.Platform.displayCaps.platformHeight);
-}
 var window1 = Ti.UI.createWindow({
-	background: "#000",
-	layout: "horizontal"
+	backgroundColor: "yellow"
 });
-var border = Ti.UI.createView({
-	backgroundColor: "#cecece",
-	height: 1,
-	width: pWidth,
-	top: 20
+var window2 = Ti.UI.createWindow({
+	backgroundColor: "blue"
 });
 
-/*var viewContainer = Ti.UI.createView({
-	top: 20,
-	backgroundColor: "#CCFFCC",
-	layout: "horizontal",
-	width: 0,
-	contentWidth: pWidth
-	//height: pHeight-border.height-border.top,
-	//showVerticalScrollIndicator: true
+var windowView1 = Ti.UI.createView();
+
+var windowView2 = Ti.UI.createView();
+
+var button1 = Ti.UI.createButton({
+  	  title: 'Enter Now',
+  	  color: "#000",
+  	  font: {fontSize: 18, fontFamily: "Arial", fontWeight: "bold", fontStyle: "italic"},
+  	  //backgroundImage:'metal-pattern.jpg',
+  	  //backgroundSelectedImage: "metal-texture.jpg",
+  	  top: 50,
+  	  width: 260,
+  	  height: 95
+  	
+  });
+  
+  button1.addEventListener('click', function(e){
+  	window2.open();
+  });
+  
+  var button2 = Ti.UI.createButton({
+  	  title: 'Close Now',
+  	  color: "#000",
+  	  font: {fontSize: 18, fontFamily: "Arial", fontWeight: "bold", fontStyle: "italic"},
+  	  //backgroundImage:'metal-pattern.jpg',
+  	  //backgroundSelectedImage: "metal-texture.jpg",
+  	  top: 50,
+  	  width: 260,
+  	  height: 95
+  	
+  });
+  
+  button2.addEventListener('click', function(e){
+  	window2.close();
+  });
+  
+  var image = Ti.UI.createImageView({
+  	  image: "metal-pattern.jpg",
+  	  width: 50,
+  	  hwight: 50
+  });
 	
-});*/
+windowView1.add(button1);
+windowView2.add(button2, image);
 
-//for(var i=0; i<itemCount; i++){
-var view = Ti.UI.createView({
-	backgroundColor: "#33CCFF",
-	top: margin,
-	left: margin,
-	width: size,
-	height: size
-});
-	
-/*var text = Ti.UI.createLabel({text: i+1, color: "#ccfee5"});
-	view.add(text);
-	viewContainer.add(view);
-}*/
+window1.add(windowView1);
+window2.add(windowView2);
 
-//window1.add(border);
-//window1.add(viewContainer);
 window1.open();
-logDisplayCaps();
+
+
 

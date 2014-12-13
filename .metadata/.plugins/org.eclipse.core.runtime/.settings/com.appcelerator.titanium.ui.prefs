@@ -9,5 +9,7 @@ Ogunjobi_Brandee_Project3\:launchShortcut=com.appcelerator.titanium.mobile.ui.io
 Ogunjobi_Brandee_Sample2\:launchMode=run
 Ogunjobi_Brandee_Sample2\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.B11049BC-123F-4820-97BB-E79D35DF3151
 eclipse.preferences.version=1
+ogunjobi.brandee.projectsample3\:launchMode=run
+ogunjobi.brandee.projectsample3\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.7A19F21A-D6FD-4FFD-97CE-F5CFF678E584
 preference.show.console.onError=true
 preference.studio.perspective.version=103

@@ -1,0 +1,59 @@
+//Ti.UI.setBackgroundColor('#81B465');
+
+var window1 = Ti.UI.createWindow({
+	backgroundColor: "yellow"
+});
+var window2 = Ti.UI.createWindow({
+	backgroundColor: "blue"
+});
+
+var windowView1 = Ti.UI.createView();
+
+var windowView2 = Ti.UI.createView();
+
+var button1 = Ti.UI.createButton({
+  	  title: 'Enter Now',
+  	  color: "#000",
+  	  font: {fontSize: 18, fontFamily: "Arial", fontWeight: "bold", fontStyle: "italic"},
+  	  backgroundImage:'metal-pattern.jpg',
+  	  backgroundSelectedImage: "metal-texture.jpg",
+  	  top: 50,
+  	  width: 260,
+  	  height: 95
+  	
+  });
+  
+  button1.addEventListener('click', function(e){
+  	window2.open();
+  });
+  
+  var button2 = Ti.UI.createButton({
+  	  title: 'Close Now',
+  	  color: "#000",
+  	  font: {fontSize: 18, fontFamily: "Arial", fontWeight: "bold", fontStyle: "italic"},
+  	  backgroundImage:'metal-pattern.jpg',
+  	  backgroundSelectedImage: "metal-texture.jpg",
+  	  top: 50,
+  	  width: 260,
+  	  height: 95
+  	
+  });
+  
+  button2.addEventListener('click', function(){
+  	window2.close();
+  });
+	
+windowView1.add(button1);
+windowView2.add(button2);
+
+window1.add(windowView1);
+window2.add(windowView2);
+
+window1.open();
+
+button.addEventListener('click', function(button){
+	var window2 = Ti.UI.createWindow({
+	backgroundColor: "#f00",
+});
+
+

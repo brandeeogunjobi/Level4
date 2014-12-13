@@ -1,0 +1,29 @@
+Ti.UI.setBackgroundColor('#81B465');
+
+ var window1 = Ti.UI.createWindow();
+
+
+
+  var button = Ti.UI.createButton({
+  	  title: 'Enter Now',
+  	  color: "#000",
+  	  font: {fontSize: 18, fontFamily: "Arial", fontWeight: "bold", fontStyle: "italic"},
+  	  backgroundImage:'metal-pattern.jpg',
+  	  backgroundSelectedImage: "metal-texture.jpg",
+  	  top: 50,
+  	  width: 260,
+  	  height: 95
+  	
+  });
+	
+
+window1.add(button);
+window1.open();
+window2.open();
+
+button.addEventListener('click', function(){
+	var window2 = Ti.UI.createWindow({
+	backgroundColor: "#f00",
+});
+
+

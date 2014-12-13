@@ -1,0 +1,12 @@
+ 
+ var window1 = Ti.UI.createWidnow();
+
+
+
+
+	
+
+
+window1.open();
+
+
