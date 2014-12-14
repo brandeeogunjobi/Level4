@@ -1,0 +1,124 @@
+//Ti.UI.setBackgroundColor('#81B465');
+var imageFile = ['abstract-background.jpg','arabian-wallboard.jpg', 'bamboo.jpg', 'black-leaves.jpg', 'blue-abstract.jpg',
+				'blue-plank.jpg', 'circle_abstract.jpg', 'colorful.jpg', 'communication-background.jpg', 'fence.jpg',
+				'flagbrick.jpg', 'flowers-birds.jpg','four-patterns.jpg', 'gold-texture.jpg', 'goodFriday.jpg', 'gray-art.jpg',
+				'grayretro.jpg', 'green-brick.jpg','grunge-bricks.jpg', 'grunge-color.jpg', 'grunge-rainbow.png', 'grungy-frames.jpg',
+				'grungy-retro.jpg', 'merry-christmas.jpg', 'metal-brownstriped.jpg', 'metal-pattern.jpg', 'metal-pinksheet.jpg','metal-texture.jpg',
+				'seamless-pattern.jpg', 'sunbeams.jpg', 'wallpaper.jpg', 'water-droplets.jpg'
+];
+	
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var itemCount = 15; // total amount of images on screen
+var rowCount = 4; //images per row
+var margin = 10; //space between images
+var canvasWidth = (pWidth / rowCount - margin*2);
+var size = (pHeight / 5) - margin;
+
+var window1 = Ti.UI.createWindow({
+	backgroundColor: "white",
+	title: "Gallery Portfolio"
+});
+	
+var window2 = Ti.UI.createWindow({
+	backgroundColor: "#fff"
+});
+
+
+var button1 = Ti.UI.createButton({
+  	  title: 'Enter Now',
+  	  color: "#000",
+  	  font: {fontSize: 18, fontFamily: "Arial", fontWeight: "bold", fontStyle: "italic"},
+  	  //backgroundImage:'metal-pattern.jpg',
+  	  //backgroundSelectedImage: "metal-texture.jpg",
+  	  top: 50,
+  	  width: 260,
+  	  height: 95
+  	
+  });
+  
+  button1.addEventListener('click', function(e){
+  window2.open();
+  });
+  
+ var button2 = Ti.UI.createButton({
+  	  title: 'Close Now',
+  	  color: "#000",
+  	  font: {fontSize: 18, fontFamily: "Arial", fontWeight: "bold", fontStyle: "italic"},
+  	  //backgroundImage:'metal-pattern.jpg',
+  	  //backgroundSelectedImage: "metal-texture.jpg",
+  	  top: 50,
+  	  width: 260,
+  	  height: 95
+  	
+  });
+  
+  button2.addEventListener('click', function(e){
+  	window2.close();
+  });
+
+var border = Ti.UI.createView({
+	backgroundColor: "#cecece",
+	height: 1,
+	width: pWidth,
+	top: 20
+});
+
+var viewContainer = Ti.UI.createScrollView({ //this our the boxes for the images
+	backgroundColor: "#f00",
+	layout: "horizontal",
+	width: pWidth,
+	height: pHeight-border.height-border.top,
+	contentWidth: pWidth,
+	showVerticalScrollIndicator: true
+
+	
+	
+});
+
+for(var i = 0; i < imageFile.length; i++){
+	var view = Ti.UI.createImageView({
+		backGround: "#33ccff",
+		image: "Vimages/" + imageFile[i],
+		borderRadius: 4,
+		top: 10,
+		left: 10,
+		right: 10,
+		width: canvasWidth,
+		height: size,
+		names: imageFile[i]
+	});
+
+var text = Ti.UI.createLabel({color: "#00FF99"}); //Number Label
+	view.add(text);
+	viewContainer.add(view);
+}
+
+/*var openImage = function(event){
+var imageWindow = Ti.UI.createWindow ({
+	title: event.source.names,
+	backgroundColor: '#f5f5f5'
+});
+
+var fullImage = Ti.UI.createImageView({
+	image: event.source.image,
+	borderRadius: 4
+});
+
+	imageWindow.add(fullImage);
+	window1.openWindow(imageWindow);
+};
+
+viewContainer.addEventListener('click', openImage);
+
+window2.add(viewContainer);
+window1.openWindow(window2);
+
+};*/
+
+window1.add(button1);
+window1.add(border);
+window2.add(viewContainer);
+window1.open();
+
+

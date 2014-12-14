@@ -1,0 +1,134 @@
+//Ti.UI.setBackgroundColor('#81B465');
+
+var window1 = Ti.UI.createWindow({
+	backgroundColor: "grey",
+	title: "First Portfolio"
+});
+
+var win1Nav = Ti.UI.ios.creatNavigationWindow({
+	window: window1
+});
+
+var button1 = Ti.UI.createView({
+ title: 'Enter Now',
+ color: "#000",
+ font: {fontSize: 18, fontFamily: "Arial", fontWeight: "bold", fontStyle: "italic"},
+ backgroundImage:'metal-pattern.jpg',
+  //backgroundSelectedImage: "metal-texture.jpg",
+  top: 50,
+  width: 260,
+  height: 95
+  	
+});
+  
+button1.addEventListener('click', function(e){
+window2.open();
+});
+
+
+var openWindow = function(){
+
+var imageFile = ['abstract-background.jpg','arabian-wallboard.jpg', 'bamboo.jpg', 'black-leaves.jpg', 'blue-abstract.jpg']
+
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var itemCount = 15;
+var rowCount = 4;
+var margin = 10;
+var canvasWidth = (pWidth / rowCount = margin*2);
+var size = (pHeight / 5) - margin;
+
+var window2 = Ti.UI.createWindow({
+	backgroundColor: "blue"
+});
+
+
+/*var border = Ti.UI.createView({
+	backgroundColor: "#cecece",
+	height: 1,
+	width: pWidth,
+	top: 20
+});*/
+
+var viewContainer = Ti.UI.createView({
+	width: pWidth,
+	backgroundColor: "#fef",
+	layout: "horizontal"
+});
+
+for(var i = 0; i < imageFile.lenth; i++){
+	var views = Ti.ui.createImageView({
+		image: "vimages/" + imageFile[i],
+		borderRadius: 3;
+		//backgroungColor: "#33ccff",
+		top: margin,
+		left: margin,
+		right: margin,
+		width: pWidth,
+		height: pHeight,
+		names: imageFile[i]
+});
+var text = Ti.UI.createLabel({text: i+1, color: "#fff"});
+	view.add(text);
+	viewContainer.add(view);
+	
+//var window1 = Ti.UI.createWindow({
+	//backgroundColor: "yellow"
+//});
+
+//var window2 = Ti.UI.createWindow({
+	//backgroundColor: "blue"
+//});
+
+var windowView1 = Ti.UI.createView();
+
+var windowView2 = Ti.UI.createView();
+
+/*var button1 = Ti.UI.createButton({
+  	  title: 'Enter Now',
+  	  color: "#000",
+  	  font: {fontSize: 18, fontFamily: "Arial", fontWeight: "bold", fontStyle: "italic"},
+  	  //backgroundImage:'metal-pattern.jpg',
+  	  //backgroundSelectedImage: "metal-texture.jpg",
+  	  top: 50,
+  	  width: 260,
+  	  height: 95
+  	
+  });
+  
+  button1.addEventListener('click', function(e){
+  	window2.open();
+  });*/
+  
+  var button2 = Ti.UI.createButton({
+  	  title: 'Close Now',
+  	  color: "#000",
+  	  font: {fontSize: 18, fontFamily: "Arial", fontWeight: "bold", fontStyle: "italic"},
+  	  //backgroundImage:'metal-pattern.jpg',
+  	  //backgroundSelectedImage: "metal-texture.jpg",
+  	  top: 50,
+  	  width: 260,
+  	  height: 95
+  	
+  });
+  
+  button2.addEventListener('click', function(e){
+  	window2.close();
+  });
+  
+  var image = Ti.UI.createImageView({
+  	  image: "metal-pattern.jpg",
+  	  width: 50,
+  	  hwight: 50
+  });
+	
+windowView1.add(button1);
+windowView2.add(button2, image);
+
+window1.add(viewContainer, windowView1);
+window2.add(border, windowView2);
+
+window1.open();
+
+
+

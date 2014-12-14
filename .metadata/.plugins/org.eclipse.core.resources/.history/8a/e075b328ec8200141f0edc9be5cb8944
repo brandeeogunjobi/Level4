@@ -1,0 +1,18 @@
+Ti.UI.setBackgroundColor('#81B465');
+
+
+var window1 = Ti.UI.createWindow({
+	backgroundColor: "grey",
+	title: "First Portfolio"
+});
+
+var imageFile = ['abstract-background.jpg','arabian-wallboard.jpg', 'bamboo.jpg', 'black-leaves.jpg', 'blue-abstract.jpg'];
+
+var images = Ti.UI.createImageview({
+	image: "abstract-background.jpg"
+	//image: Vimages/ + imageFile[0]
+});
+
+
+window1.add(images);
+window1.open();

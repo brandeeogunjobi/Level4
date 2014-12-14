@@ -1,0 +1,61 @@
+//Ti.UI.setBackgroundColor('#81B465');
+
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var itemCount = 30; // total amount of images on screen
+var rowCount = 4; //images per row
+var margin = 10; //space between images
+var canvasWidth = (pWidth / rowCount - margin*2);
+var size = (pHeight / 5) - margin;
+
+var window1 = Ti.UI.createWindow({
+	backgroundColor: "grey",
+});
+
+var border = Ti.UI.createView({
+	backgroundColor: "#cecece",
+	height: 1,
+	width: pWidth,
+	//top: 20
+});
+
+var viewContainer = Ti.UI.createView({
+	width: pWidth,
+	backgroundColor: "#fef",
+	//layout: "horizontal"
+});
+
+for(var i = 0; i<itemCount; i++){
+	var view = Ti.UI.createView({
+		//image: "Vimages/" + imageFile[i],
+		backGround: "#33ccff"
+		//borderRadius: 4,
+		top: 10,
+		left: 10,
+		right: 10,
+		width: size,
+		height: size,
+		//names: imageFile[i]
+});
+
+
+var text = Ti.UI.createLabel({text: i+1, color: "#fff"});
+	view.add(text);
+	viewContainer.add(view);
+
+
+
+//var imageFile = ['abstract-background.jpg','arabian-wallboard.jpg', 'bamboo.jpg', 'black-leaves.jpg', 'blue-abstract.jpg'];
+
+/*var theImages = Ti.UI.createImageView({
+	image: "metal-pattern.jpg"
+});*/
+
+
+
+
+
+//window1.add(theImages);
+window1.add(border);
+window1.add(viewContainer);
+window1.open();

@@ -1,0 +1,62 @@
+//Ti.UI.setBackgroundColor('#81B465');
+var OpenGallery = function(){
+	
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var itemCount = 15; // total amount of images on screen
+var rowCount = 3; //images per row
+var margin = 10; //space between images
+var canvasWidth = (pWidth / rowCount - margin*2);
+var size = (pHeight / 5) - margin;
+
+var window1 = Ti.UI.createWindow({
+	backgroundColor: "white",
+});
+
+var NavWindow = Ti.UI.createNavigationWIndow({
+	window: window1
+});
+
+
+
+
+var border = Ti.UI.createView({
+	backgroundColor: "#cecece",
+	height: 1,
+	width: pWidth,
+	top: 20
+});
+
+var viewContainer = Ti.UI.createScrollView({ //this our the boxes for the images
+	backgroundColor: "#f00",
+	layout: "horizontal",
+	width: pWidth,
+	size: pHeight,
+	contentWidth: pWidth,
+	showVerticalScrollIndicator: true
+	
+});
+
+for(var i = 0; i < imageFile.length; i++){
+	var imageContainer = Ti.UI.createImageView({
+		backGround: "#33ccff",
+		image: "Vimages/" + imageFile[i],
+		borderRadius: 4,
+		top: 10,
+		left: 10,
+		right: 10,
+		width: canvasWidth,
+		height: size,
+		names: imageFile[i]
+	});
+/*var text = Ti.UI.createLabel({text: i+1, color: "#00FF99"}); //Number Label
+	view.add(text);*/
+	viewContainer.add(imageContainer);
+}
+
+var imageFile = ['abstract-background.jpg','arabian-wallboard.jpg', 'bamboo.jpg', 'black-leaves.jpg', 'blue-abstract.jpg'];
+
+
+window1.add(border);
+window1.add(viewContainer);
+navWindow.open();

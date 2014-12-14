@@ -1,0 +1,61 @@
+function create_gallery_content(){
+	
+	var viewContainer = Ti.UI.createScrollView({ //this our the boxes for the images
+		backgroundColor: "#f00",
+		layout: "horizontal",
+		width: pWidth,
+		height: pHeight - border.height - border.top,
+		contentWidth: pWidth,
+		showVerticalScrollIndicator: true
+	});
+	
+	for(var i = 0; i < imageFile.length; i++){
+		var view = Ti.UI.createImageView({
+			backGround: "#33ccff",
+			image: "Vimages/" + imageFile[i],
+			borderRadius: 4,
+			top: 10,
+			left: 10,
+			right: 10,
+			width: canvasWidth,
+			height: size,
+			name: imageFile[i]
+		});
+	
+		var text = Ti.UI.createLabel({color: "#00FF99"}); //Number Label
+		
+		view.index = i;
+		view.add(text);
+		viewContainer.add(view);
+		
+		gallery_window.add(viewContainer);
+		
+		view.addEventListener('click', openImage );
+	}
+}
+
+function openImage(event){
+	
+	this_image = event.source;
+	
+	//console.log('img clicked');
+	//console.log( event );
+	//console.log( this_image );
+	//console.log( this_image.image );
+	//console.log( this_image.index );
+
+	var imageWindow = Ti.UI.createWindow ({
+		title: this_image.name,
+		backgroundColor: '#f5f5f5'
+	});
+	
+	var fullImage = Ti.UI.createImageView({
+		image: event.source.image,
+		borderRadius: 4
+	});
+
+	imageWindow.add(fullImage);
+	//window1.openWindow(imageWindow);
+	main_nav.openWindow( imageWindow );
+	
+};

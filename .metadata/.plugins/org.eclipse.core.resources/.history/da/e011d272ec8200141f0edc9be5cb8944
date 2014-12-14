@@ -1,0 +1,13 @@
+Ti.UI.setBackgroundColor('#81B465');
+
+
+var imageFile = ['abstract-background.jpg','arabian-wallboard.jpg', 'bamboo.jpg', 'black-leaves.jpg', 'blue-abstract.jpg'];
+
+var images = Ti.UI.createImageView({
+	image: "abstract-background.jpg"
+	//image: Vimages/ + imageFile[0]
+});
+
+
+window1.add(images);
+window1.open();
