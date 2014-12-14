@@ -132,10 +132,26 @@ var border = Ti.UI.createView({
 	top: 20
 });
 
-//var loadGalleryFile = require ("GalleryFile");
+var loadGalleryFile = require ("GalleryFile");
 
 
 
+
+
+
+
+
+//window2.add(viewContainer);
+//window2.open();
+//window1.openWindow(window2);
+
+
+
+//window1.add(button1);
+//window1.add(border);
+//window2.add(viewContainer);
+//window1.open();
+//
 
 /*
 this_app.addEventListener('deviceorientationcange', function(e){

@@ -137,6 +137,22 @@ var border = Ti.UI.createView({
 
 
 
+
+
+
+
+//window2.add(viewContainer);
+//window2.open();
+//window1.openWindow(window2);
+
+
+
+//window1.add(button1);
+//window1.add(border);
+//window2.add(viewContainer);
+//window1.open();
+//
+
 /*
 this_app.addEventListener('deviceorientationcange', function(e){
 	

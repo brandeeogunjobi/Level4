@@ -59,4 +59,3 @@ function openImage(event){
 	main_nav.openWindow( imageWindow );
 	
 };
-var loadFile = require ("GalleryFile");
